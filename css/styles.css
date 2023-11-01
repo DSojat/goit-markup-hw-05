@@ -567,11 +567,9 @@ button {
   pointer-events: auto;
 }
 
-.order-form {
-  display: flex;
-  flex-direction: column;
+.modal-window {
   padding: 24px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -580,6 +578,11 @@ button {
   border-radius: 4px;
   background: #fcfcfc;
   z-index: 99;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .close-btn {
