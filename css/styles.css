@@ -654,7 +654,10 @@ button {
   letter-spacing: 0.04em;
   font-weight: 400;
   border-radius: 4px;
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent; /* hide outline */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
@@ -663,25 +666,27 @@ button {
   transform: translateY(-50%);
   left: 16px;
   fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form-input:focus {
-  border: 1px solid #4d5ae5;
-  outline: transparent; /* hide outline */
-  outline-offset: 2px;
+  border-color: #4d5ae5;
 }
 
 .order-form-input:focus + .input-icon {
   fill: #4d5ae5;
 }
 
+.form-comment-wrapper {
+  margin-bottom: 16px;
+}
+
 .order-form-comment {
-  /* margin-bottom: 16px; */
-  padding: 0;
-  padding-left: 16px;
+  padding: 8px 16px;
   height: 120px;
   resize: none;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .order-form-checkbox-label {
