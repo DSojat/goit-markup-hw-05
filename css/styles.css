@@ -698,6 +698,7 @@ button {
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .checkbox-visual {
@@ -708,15 +709,21 @@ button {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  fill: none;
+  fill: transparent;
   background-color: #ffffff;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form-checkbox:checked + .order-form-checkbox-label span {
-  fill: #fff;
-  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  background-color: #404bbf;
+  border: none;
 }
+
+.privacy-link {
+  color: #4d5ae5;
+}
+
 /* === /FORM style === */
